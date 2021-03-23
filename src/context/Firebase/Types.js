@@ -1,0 +1,5 @@
+export const SHOW_LOADER = 'SHOW_LOADER'
+export const ADD_NOTE = 'ADD_NOTE'
+export const DEL_NOTE = 'DEL_NOTE'
+export const FETCH_NOTES = 'FETCH_NOTES'
+export const CHANGE_NOTE = 'CHANGE_NOTE'

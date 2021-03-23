@@ -1,0 +1,70 @@
+.container {
+  margin-top: 1em;
+}
+nav {
+  color: white;
+  padding-left: 5.6em !important;
+}
+.navbar-nav {
+  margin-left: 1em;
+}
+.jumbotron > div {
+  text-align: center;
+}
+.home {
+  width: 85%;
+  margin: 0 auto;
+}
+.list-group > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-group-item-content > strong > span {
+  margin-right: 0.5em;
+}
+.list-group-item-content > strong > small {
+  margin-left: 0.5em;
+}
+.alert {
+  width: 85%;
+  margin: 0 auto 1em auto;
+}
+.spinner-border {
+  margin-left: 50%;
+}
+/* Начало анимации */
+.alert-enter {
+  opacity: 0;
+}
+/* Кульминация анимации */
+.alert-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+/* Конец анимации */
+.alert-exit-active {
+  opacity: 0;
+  transition: opacity 800ms;
+}
+.note-enter-active {
+  animation: note 0.8s ease-in-out alternate-reverse;
+}
+
+.note-exit-active {
+  animation: note 0.8s ease-in-out forwards;
+}
+
+@keyframes note {
+  0% {
+    transform: translateX(0%);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translateX(2em);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20em);
+  }
+}
